@@ -1,7 +1,5 @@
 # Flashlight
 
-### Level 0
-
 Students will build a simple Flashlight app to practice working with IBOutlets, IBActions, and UIControlEvents. 
 
 Students who complete this project independently are able to:
@@ -19,29 +17,25 @@ Build a view with two states. The first state has a black background and an 'On'
 
 1. Open the ViewController scene in Main.storyboard
 2. Add a UIButton to the view, set the initial title to 'On'
-    * note: System buttons animate title changes, which can break the XCTest included in the project. To pass the test, change your UIButton type to Custom, or update the test to adjust for the animation delay.
 3. Set the view's background color to black
-4. Create ```@IBAction func buttonTapped(_ sender: Any)``` in your ViewController class
+4. Open the Assistant editor and Control Click and drag from the UIButton to the ViewController.swift file.  Select IBAction, on TouchUpInside from the popup menu.  
+*Xcode should generate a code snippet  ```@IBAction func buttonTapped(_ sender: Any)``` 
 
 ### Flashlight Logic
 
-1. Create a boolean variable isOn to track whether the flashlight is on or off
+1. Create a boolean variable isOn to track whether the flashlight is on or off in the ViewController class
 2. Use the ```buttonTapped``` IBAction to check the current state of the ViewController and toggle the appropriate parameters
     * ex. If isOn is false, set background color, button title text, and button title color
 
 ### Black Diamonds
 
-* Add a UISwipeGestureRecognizer or UITapGestureRecognizer to toggle the flashlight
-* Create a Unit or UITest that verifies gesture recognizer function
 * Make the Status Bar visible in both Flashlight modes
+Documentation: https://developer.apple.com/documentation/uikit/uistatusbarstyle?language=objc
 * Toggle the device's LED light when turning the Flashlight on
+Documentation: https://developer.apple.com/documentation/avfoundation/avcapturedevice?language=objc * See Managing Torch Settings*
+* Allow the Flashlight to toggle on and off using a tap guesture anywhere on the screen.
+Documentation: https://developer.apple.com/documentation/uikit/uitapgesturerecognizer?language=objc
 
-### Tests
-
-* Verifies state of an isOn boolean variable
-* Verifies state of background color
-* Verifies state of button text
-* Verifies correct state change after toggle
 
 ## Contributions
 
