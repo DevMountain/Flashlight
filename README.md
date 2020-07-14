@@ -18,8 +18,8 @@ For this app, build a single view with two states, an `On` state, and an `Off` s
 1. Open the Main.storyboard file and locate the ViewController scene.
 2. Add a UIButton to the view, set the initial title to `On`, and change the text color to white to make it look like the button disappeared.
 3. Set the view's background color to black (you should be able to see your button again).
-4. Open the ViewController.swift file in the Assistant editor. To accomplish this, hold down the option key, with the storyboard open, select the ViewController.swift file and drag from the UIButton to the ViewController.swift file above the viewDidLoad. The connection type should display "Outlet". Give this outlet the name of onOffButton.
-5. Repeat the above step. Instead of placing it above the viewDidLoad, place it below the closing bracket of the viewDidLoad. The connection type should display "Action" and below that, you should see "Touch Up Inside". Give this Action the name "buttonTapped". 
+4. Open the ViewController.swift file in the Assistant editor. To accomplish this, hold down the option key, with the storyboard open, select the ViewController.swift file and drag from the UIButton to the ViewController.swift file above the viewDidLoad. The connection type should display "Outlet". Give this outlet the name, "onOffButton".
+5. Repeat the above step. Instead of placing it above the viewDidLoad, place it below the closing bracket of the viewDidLoad. The connection type should display "Action" and below that, you should see "Touch Up Inside". Give this Action the name, "buttonTapped". 
 *At this point, Xcode should generate a code snippet  
 ```@IBAction func buttonTapped(_ sender: Any)``` 
 
